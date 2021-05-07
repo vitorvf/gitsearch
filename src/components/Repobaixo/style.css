@@ -1,0 +1,89 @@
+.gfcIZQ {
+  height: auto;
+}
+
+.htLRdL {
+  height: 40rem;
+  background: var(--primary);
+}
+
+.jMhaxE.jMhaxE {
+  max-width: 112.5rem;
+  margin: 0px auto;
+  padding: 0px 1.875rem;
+}
+
+.bdDYJz {
+  padding: 1.25rem 0rem;
+  text-align: center;
+}
+
+.jGLdVH {
+  margin: 0.625rem auto;
+}
+.boPkKw {
+  margin: 0.3125rem auto;
+  color: var(--white);
+}
+
+.knnrxv {
+  color: var(--white);
+}
+
+.dAHnJY {
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin: 3.125rem 0px 0px;
+}
+
+.dryRrI {
+  background: rgb(36 41 46);
+  color: white;
+  border-radius: 0.3125rem;
+  margin: 0.35rem;
+  width: 150px;
+  padding: 15px 20px;
+}
+
+.jGLdVH img {
+  border-radius: 6.25rem;
+  border: 0.5rem solid rgb(0 112 243);
+  transition: opacity 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.boPkKw h1 {
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.boPkKw a,
+.boPkKw p {
+  text-decoration: none;
+  transition: transform 0.3s ease 0s;
+}
+
+.knnrxv p {
+  margin: 0.9375rem auto;
+  max-width: 31.25rem;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.dryRrI p {
+  font-size: 1.5rem;
+}
+
+.dryRrI h1 {
+  font-weight: 400;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.boPkKw p {
+  color: rgb(0, 112, 243);
+  font-size: 1.5rem;
+  font-family: 'Space Mono', monospace;
+}

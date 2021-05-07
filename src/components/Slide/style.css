@@ -1,0 +1,14 @@
+aside {
+  background-color: #26292d;
+  -webkit-box-shadow: 5px 0px 10px rgb(0 0 0 / 25%);
+  box-shadow: 5px 0px 10px rgb(0 0 0 / 25%);
+  width: 400px;
+  padding: 0 20px;
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation: fadeRight 0.3s forwards;
+  animation: fadeRight 0.3s forwards;
+}
