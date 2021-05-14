@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
 import './style.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 export const Repobaixo = ({ repobaixo }) => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
-    <div>
+    <div data-aos="fade-right">
       <section className="sc-iqAbSa gfcIZQ">
         <section className="sc-eCApGN htLRdL">
           <div className="sc-bdnylx jMhaxE">

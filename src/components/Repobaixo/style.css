@@ -4,7 +4,6 @@
 
 .htLRdL {
   height: 40rem;
-  background: var(--primary);
 }
 
 .jMhaxE.jMhaxE {
@@ -23,11 +22,11 @@
 }
 .boPkKw {
   margin: 0.3125rem auto;
-  color: var(--white);
+  color: white;
 }
 
 .knnrxv {
-  color: var(--white);
+  color: white;
 }
 
 .dAHnJY {
@@ -50,7 +49,6 @@
 .jGLdVH img {
   border-radius: 1rem;
   border: 0.5rem solid #8257e6;
-  transition: opacity 0.3s ease 0s;
   cursor: pointer;
 }
 

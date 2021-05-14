@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './style.css';
 import Star from '../../img/star.svg';
 import Forks from '../../img/forks.svg';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function useFetch(url) {
   const [data, setData] = useState(null);
@@ -26,10 +28,14 @@ const Repocards = ({ buscainput }) => {
   const data = useFetch(`https://api.github.com/users/${buscainput}/repos
   `);
 
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   console.log(data);
 
   return (
-    <div id="cards">
+    <div data-aos="fade-right" id="cards">
       {data?.map((repo) => (
         <a
           href={repo.html_url}
