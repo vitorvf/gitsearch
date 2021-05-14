@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-// import { Repositories } from './components/Repositories/Repositories';
 import SearchUser from './pages/SearchUser/SearchUser';
 import UserProfile from './pages/Userprofile/Userprofile';
 

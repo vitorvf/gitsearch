@@ -1,12 +1,11 @@
 import React, { useState, useRef } from 'react';
 import Loadingvf from '../Loading/Loading';
 import { Repositories } from '../Repositories/Repositories';
-// import { useNavigate } from 'react-router-dom';
 import './inputSearch.css';
 import '../../style/global.css';
-const InputSearch = () => {
-  // const navigate = useNavigate();
 
+const InputSearch = () => {
+  const [busca, setBusca] = useState('');
   const [data, setData] = useState('');
   const [loading, setLoading] = useState(false);
   const inputBusca = useRef();
@@ -18,6 +17,7 @@ const InputSearch = () => {
       const response = await fetch(
         `https://api.github.com/users/${inputBusca.current.value}`,
       );
+
       if (response.status === 404 || response.statusText === 'Not Found') {
         SetError(true);
       } else {
@@ -28,9 +28,9 @@ const InputSearch = () => {
       setLoading(false);
     }
 
+    setBusca(inputBusca.current.value);
+
     fetchCep();
-    console.log(data);
-    // navigate(`/user/${inputBusca.current.value}`);
   };
 
   return (
@@ -41,21 +41,19 @@ const InputSearch = () => {
             <h1 className="h1busca">Procure por algum perfil</h1>
           </div>
           <form onSubmit={handleSubmit}>
-            <input
-              id="search"
-              placeholder="Digite um CEP"
-              required
-              ref={inputBusca}
-            />
+            <input id="search" placeholder="" required ref={inputBusca} />
             <button type="submit" className="btn-search">
-              Rastrear
+              Pesquisar
             </button>
           </form>
+          {error && <p className="erropage">Erro! Digite Novamente!!!!!</p>}
         </div>
       </main>
       {loading && !error && <Loadingvf />}
-      {!loading && !data.erro && data && <Repositories archivevf={data} />}
-      {error && <p>Erro! Digite Novamente!!!!!</p>}
+      {!loading && !data.erro && data && (
+        <Repositories archivevf={data} buscavf={busca} />
+      )}
+      ;
     </div>
   );
 };

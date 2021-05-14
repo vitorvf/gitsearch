@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import './style.css';
+import Star from '../../img/star.svg';
+import Forks from '../../img/forks.svg';
 
 function useFetch(url) {
   const [data, setData] = useState(null);
@@ -11,7 +14,7 @@ function useFetch(url) {
       }
 
       const posts = await response.json();
-      setData(posts.data);
+      setData(posts);
     }
 
     loadData();
@@ -19,15 +22,53 @@ function useFetch(url) {
   return data;
 }
 
-const Repocards = () => {
-  const data = useFetch(
-    `https://api.github.com/users/${inputBusca.current.value}/repos`,
-  );
+const Repocards = ({ buscainput }) => {
+  const data = useFetch(`https://api.github.com/users/${buscainput}/repos
+  `);
+
   console.log(data);
 
   return (
-    <div>
-      <h1>{data?.country}</h1>
+    <div id="cards">
+      {data?.map((repo) => (
+        <a
+          href={repo.html_url}
+          key={repo.id}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="testevf">
+            <div>
+              {' '}
+              <h3>{repo.name}</h3>
+            </div>
+
+            <div>
+              <p>{repo.description}</p>
+            </div>
+
+            <div className="faixa3">
+              <div className="language">
+                <p className="ok">{repo.language}</p>
+              </div>
+
+              <div className="star">
+                <img src={Star} width="15" alt="" />
+                <p>{repo.stargazers_count}</p>
+              </div>
+
+              <div className="forks">
+                <img src={Forks} width="15" alt="" />
+                <p>{repo.forks}</p>
+              </div>
+
+              <div>
+                <p className="kb">{repo.size}Kb</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      ))}
     </div>
   );
 };

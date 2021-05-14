@@ -12,13 +12,11 @@ main {
   -webkit-align-items: center;
   align-items: center;
   height: 100vh;
-  text-align: center;
 }
 
 #box {
   width: 815px;
-  padding: 30px;
-  background: #fff;
+  padding: 57px;
   box-shadow: 0 0 50px rgb(0 0 0 / 10%);
   transition: all 0.3s ease;
   border-radius: 6px;
@@ -39,8 +37,8 @@ main {
 }
 
 .btn-search {
-  border-radius: 5px;
-  border: 1px solid #2bc866;
+  border-radius: 0px;
+  border: 1px solid #32353a;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
@@ -48,7 +46,7 @@ main {
   font-size: 13px;
   cursor: pointer;
   box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
-  background-color: #2bc866;
+  background-color: #32353a;
   transition: background-color 0.2s, color 0.2s;
   padding: 14px 30px;
   margin: 0;
@@ -57,7 +55,18 @@ main {
 }
 
 .h1busca {
-  font-size: 36px;
-  margin: 0 0 16px;
-  font-weight: 600;
+  font-family: 'Poppins';
+  margin: 6px 142px 17px;
+  font-weight: 500;
+}
+
+.erropage {
+  font-family: monospace;
+  font-weight: 500;
+  color: red;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-right: 70px;
 }

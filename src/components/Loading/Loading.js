@@ -3,7 +3,9 @@ import React from 'react';
 const Loading = () => {
   return (
     <div>
-      <h1>Loading</h1>
+      <div className="spinner"></div>
+      <div className="preloader"></div>
+      {/* <h1>Loading</h1> */}
     </div>
   );
 };

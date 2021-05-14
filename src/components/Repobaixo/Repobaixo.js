@@ -8,16 +8,12 @@ export const Repobaixo = ({ repobaixo }) => {
           <div className="sc-bdnylx jMhaxE">
             <div className="sc-hKFyIo bdDYJz">
               <div className="sc-jSFkmK jGLdVH">
-                <img
-                  src={repobaixo?.avatar_url}
-                  alt="Vitor Ferreira"
-                  width="180"
-                ></img>
+                <img src={repobaixo?.avatar_url} alt="" width="180"></img>
               </div>
               <div className="sc-gKAblj boPkKw">
                 <h1>{repobaixo?.name}</h1>
                 <a
-                  href="https://github.com/vitorvf"
+                  href={repobaixo?.html_url}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

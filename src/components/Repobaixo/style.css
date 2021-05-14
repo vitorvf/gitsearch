@@ -39,7 +39,7 @@
 }
 
 .dryRrI {
-  background: rgb(36 41 46);
+  background: rgb(50 53 58);
   color: white;
   border-radius: 0.3125rem;
   margin: 0.35rem;
@@ -48,8 +48,9 @@
 }
 
 .jGLdVH img {
-  border-radius: 6.25rem;
-  border: 0.5rem solid rgb(0 112 243);
+  border-radius: 1rem;
+  /* border-radius: 6.25rem; */
+  border: 0.5rem solid #8257e6;
   transition: opacity 0.3s ease 0s;
   cursor: pointer;
 }
@@ -83,7 +84,7 @@
 }
 
 .boPkKw p {
-  color: rgb(0, 112, 243);
+  color: #8257e6;
   font-size: 1.5rem;
   font-family: 'Space Mono', monospace;
 }
